@@ -1,0 +1,20 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Jupyter stuff (jupytext takes care of notebooks)
+*.ipynb
+.ipynb_checkpoints
+
+# This data can be downloaded by the notebook instead
+data/energidataservice/**
+
+# Use this file to keep a folder
+!.gitkeep
