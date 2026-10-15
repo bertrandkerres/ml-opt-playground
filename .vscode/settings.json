@@ -1,0 +1,13 @@
+{
+    // Python: uv-managed venv
+    "python.defaultInterpreterPath": "${workspaceFolder}/envs/python/.venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+
+    // Julia: project environment (Project.toml / Manifest.toml)
+    "julia.environmentPath": "${workspaceFolder}/envs/julia",
+
+    // Plain `julia` started in the integrated terminal also uses the project env
+    "terminal.integrated.env.linux": {
+        "JULIA_PROJECT": "${workspaceFolder}/envs/julia"
+    }
+}
