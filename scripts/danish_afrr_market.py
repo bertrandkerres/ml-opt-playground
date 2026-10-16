@@ -121,12 +121,13 @@ imbalance_prices.head()
 # The aFRR **energy** market. Since this is a lot of data, we fetch it in daily batches. Pause a bit between two fetches, since EDS Api else throws an error. The data only goes 3 months back.
 
 # %%
+from collections.abc import Iterator
 def afrr_energy_daily_urls(
     start: datetime,
     end: datetime,
     offset: timedelta = timedelta(days=1),
     base_url: str = "https://api.energidataservice.dk/dataset/AfrrEnergyActivation?offset=0"
-) -> str:
+) -> Iterator[str]:
     """Iterates over URLs to fetch data in batches."""
     current_start = start
     while current_start < end:
@@ -143,7 +144,7 @@ def afrr_energy_daily_urls(
         yield url
         current_start = current_end
 
-def fetch_with_pauses(url_iterator, sec_pause = 5):
+def fetch_with_pauses(url_iterator: Iterator[str], sec_pause = 5):
     results = []
     for url in url_iterator:
         results.append(get_eds_data(url))
