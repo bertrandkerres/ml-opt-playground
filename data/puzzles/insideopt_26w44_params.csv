@@ -1,0 +1,16 @@
+Name,Candy,LightsOutMean,LightsOutStd,DoorMin,DoorMode,DoorMax
+Full-Size Fran,8,30,8,1,2,4
+Party House,5,40,12,1,3,6
+Mr. Lindqvist,3,45,10,1,2,4
+Mrs. Okafor,3,50,15,1,2,4
+Bakery Flat,2,50,15,1,2,4
+Pumpkin Patch,3,55,10,1,2,4
+The Hendersons,2,60,15,1,2,4
+Twin Gables,2,65,15,1,2,4
+Corner Duplex,2,70,15,1,2,4
+Blue Door,2,75,15,1,2,4
+Witch's Porch,2,80,15,1,2,4
+Lamp Post House,2,85,15,1,2,4
+Haunted Garage,6,180,0,5,8,15
+Grandma Rose,4,180,0,2,3,6
+Dentist Dave,1,180,0,1,2,3
